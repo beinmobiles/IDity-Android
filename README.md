@@ -1,6 +1,6 @@
 # IDity Android SDK
 
-![iOS](https://img.shields.io/badge/Platform-Android-lightgrey.svg)
+![Android](https://img.shields.io/badge/Platform-Android-lightgrey.svg)
 ![Swift](https://img.shields.io/badge/Swift-5.0%2B-orange.svg)
 ![Minimum iOS](https://img.shields.io/badge/iOS-15.6%2B-blue.svg)
 
