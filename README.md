@@ -1,8 +1,8 @@
 # IDity Android SDK
 
 ![Android](https://img.shields.io/badge/Platform-Android-lightgrey.svg)
-![Swift](https://img.shields.io/badge/Swift-5.0%2B-orange.svg)
-![Minimum iOS](https://img.shields.io/badge/iOS-15.6%2B-blue.svg)
+![Kotlin](https://img.shields.io/badge/Kotlin-11%2B-orange.svg)
+![Minimum Android](https://img.shields.io/badge/Android-21%2B-blue.svg)
 
 **IDity** is an advanced identity verification SDK for Android. It helps you read and extract information from a user's ID card or Passport through a secure and seamless mobile experience.
 
