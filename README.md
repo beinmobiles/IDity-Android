@@ -46,14 +46,14 @@ You must add the following permissions to your **AndroidManifest.xml** file. The
 ## 🚀 Getting Started
 
 ### 1. Initialize the SDK
-Initialize the SDK in your `AppDelegate`. You can pass a `tintColor` to match the SDK's UI elements (buttons and icons) to your app's branding. 
+Initialize the SDK in your `Application`. You can pass a `tintColor` to match the SDK's UI elements (buttons and icons) to your app's branding. 
 
-The `recognitionLanguages` parameter uses the `IDityLanguage` enum. This allows the SDK to prioritize specific character sets, ensuring higher recognition accuracy in multilingual regions.
+The `recognitionLanguage` parameter uses the `IDityLanguage` enum. This allows the SDK to prioritize specific character sets, ensuring higher recognition accuracy in multilingual regions.
 
-```swift
-import IDity
+```kotlin
+com.beinmobiles.idity.*
 
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+override fun onCreate() {
     
     // Initialize the library
     IDitySDK.initialize(
@@ -61,8 +61,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         recognitionLanguage: IDityLanguage.LATIN,
         tintColor: Color.RED
     )
-    
-    return true
 }
 ```
 
