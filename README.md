@@ -16,8 +16,8 @@ Please contact **[idity@beinmobiles.com](mailto:idity@beinmobiles.com)** to get 
 
 ## 📦 Installation
 
-### Swift Package Manager (SPM)
-1. In your **settings.gradle.kts** (or **settings.gradle**), add the GitHub Packages Maven repository
+### 1. Authenticate with GitHub Packages
+In your **settings.gradle.kts** (or **settings.gradle**), add the GitHub Packages Maven repository
    
    ```kotlin
 dependencyResolutionManagement {
@@ -36,7 +36,8 @@ dependencyResolutionManagement {
 }
 ```
 
-2. In your app-level **build.gradle.kts**, add the following line:
+### 2. Add the Dependency
+In your app-level **build.gradle.kts**, add the following line:
 
 ```kotlin
 dependencies {
