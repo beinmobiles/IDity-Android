@@ -11,9 +11,9 @@ class MyApplication : Application() {
 
         // This is the equivalent of didFinishLaunchingWithOptions
         IDitySDK.initialize(
-            clientKey = "3274356529522985",
+            clientKey = "CLIENT_KEY",
             recognitionLanguage = IDityLanguage.LATIN,
-            tintColor = Color.BLUE
+            tintColor = Color.RED
             )
     }
 }
