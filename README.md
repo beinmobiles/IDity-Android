@@ -102,29 +102,26 @@ IDitySDK.startJourney(
 Conform to the IDityJourneyCallbacks protocol to handle the lifecycle and results of the verification process.
 
 ```kotlin
-extension YourViewController: IDityJourneyCallbacks {
+/// Called when the SDK successfully initializes and the UI appears
+override fun onJourneyStarted() {
+   print("IDity journey has started.")
+}
 
-    /// Called when the SDK successfully initializes and the UI appears
-    override fun onJourneyStarted() {
-        print("IDity journey has started.")
-    }
+/// Called when the document scanning and verification is successful
+override fun onJourneyCompleted(infoObject: InfoObject) {
+   // Access extracted data
+   print("First Name: ${infoObject.firstName}")
+   print("Last Name: ${infoObject.lastName}")
+}
 
-    /// Called when the document scanning and verification is successful
-    override fun onJourneyCompleted(infoObject: InfoObject) {
-        // Access extracted data
-        print("First Name: \(infoObject.firstName ?? "N/A")")
-        print("Last Name: \(infoObject.lastName ?? "N/A")")
-    }
+/// Called when the user manually closes the SDK before completion
+override fun onJourneyCancelled() {
+   print("User cancelled the verification process.")
+}
 
-    /// Called when the user manually closes the SDK before completion
-    override fun onJourneyCancelled() {
-        print("User cancelled the verification process.")
-    }
-
-    /// Called if an error occurs during the journey
-    override fun onError(error: Exception) {
-        print("IDity Error: \(error.localizedDescription)")
-    }
+/// Called if an error occurs during the journey
+override fun onError(error: Exception) {
+   print("IDity Error: ${error.message}")
 }
 ```
 
