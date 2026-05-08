@@ -18,6 +18,7 @@ Please contact **[idity@beinmobiles.com](mailto:idity@beinmobiles.com)** to get 
 
 ### Swift Package Manager (SPM)
 1. In your **settings.gradle.kts** (or **settings.gradle**), add the GitHub Packages Maven repository
+   
    ```kotlin
 dependencyResolutionManagement {
     repositories {
@@ -34,7 +35,9 @@ dependencyResolutionManagement {
     }
 }
 ```
+
 2. In your app-level **build.gradle.kts**, add the following line:
+
 ```kotlin
 dependencies {
      implementation("com.github.beinmobiles:idity:1.0.2") 
