@@ -41,7 +41,7 @@ In your app-level **build.gradle.kts**, add the following line:
 
 ```kotlin
 dependencies {
-     implementation("com.github.beinmobiles:idity:1.0.2") 
+     implementation("com.github.beinmobiles:idity:1.0.1") 
  }
 ```
 
