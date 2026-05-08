@@ -34,7 +34,7 @@ You must add the following permissions to your **AndroidManifest.xml** file. The
 <!-- Required to capture document images for OCR -->
 <uses-permission android:name="android.permission.CAMERA" />
 
-<!-- Required for API-based recognition (if applicable) -->
+<!-- Required for API-based recognition -->
 <uses-permission android:name="android.permission.INTERNET" />
 
 <!-- Ensures the app is only visible in the Play Store for devices with a camera -->
