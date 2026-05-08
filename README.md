@@ -174,10 +174,6 @@ This object contains the metadata and imagery of the scanned identification docu
 
 ---
 
-## 🛡️ Privacy & Security
-
-The IDity SDK is built with privacy in mind. Ensure that the PrivacyInfo.xcprivacy file included in the package is correctly bundled to comply with Apple's latest App Store requirements.
-
 ## 📧 Contact & Support
 
 For technical support, feature requests, or to obtain your Client Key, please reach out:
