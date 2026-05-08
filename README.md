@@ -90,8 +90,8 @@ Using specific IDityLanguage cases improves OCR accuracy and performance by narr
 ```swift
 // Start the verification process
 IDitySDK.startJourney(
-    from: self, 
-    delegate: self
+   this,
+   this
 )
 ```
 
