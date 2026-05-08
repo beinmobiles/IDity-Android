@@ -28,11 +28,18 @@ Please contact **[idity@beinmobiles.com](mailto:idity@beinmobiles.com)** to get 
 
 ## ⚙️ Required Configuration
 
-You must add the camera permission key to your app's **Info.plist**. Without this, the application will crash when the SDK attempts to scan a document.
+You must add the following permissions to your **AndroidManifest.xml** file. These are required for camera access to scan a document.
 
-| Key | Value |
-| :--- | :--- |
-| **NSCameraUsageDescription** | "We need camera access to scan your ID or Passport for identity verification." |
+```xml
+<!-- Required to capture document images for OCR -->
+<uses-permission android:name="android.permission.CAMERA" />
+
+<!-- Required for API-based recognition (if applicable) -->
+<uses-permission android:name="android.permission.INTERNET" />
+
+<!-- Ensures the app is only visible in the Play Store for devices with a camera -->
+<uses-feature android:name="android.hardware.camera" android:required="true" />
+```
 
 ---
 
