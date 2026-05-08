@@ -68,20 +68,11 @@ Using specific IDityLanguage cases improves OCR accuracy and performance by narr
 
 | Case | Language |
 | :--- | :--- |
-| `.ar` | `Arabic` |
-| `.zh` | `Chinese` |
-| `.en` | `English` |
-| `.fr` | `French` |
-| `.de` | `German` |
-| `.it` | `Italian` |
-| `.ja` | `Japanese` |
-| `.ko` | `Korean` |
-| `.pr` | `Portuguese` |
-| `.ru` | `Russian` |
-| `.es` | `Spanish` |
-| `.uk` | `Ukrainian` |
-
-**Optimize for Detection:** The order of the languages in the array is significant. The engine processes the list sequentially, so you should place the most likely language for your target users at the beginning of the array.
+| `.LATIN` | `English, Spanish, French, German, Vietnamese, etc.` |
+| `.CHINESE` | `Chinese (Simplified and Traditional)` |
+| `.DEVANAGARI` | `Hindi, Marathi, Nepali, Sanskrit, etc.` |
+| `.JAPANESE` | `Japanese (Kanji, Hiragana, Katakana)` |
+| `.KOREAN` | `Korean (Hangul)` |
 
 ### 2. Start the Journey
 
