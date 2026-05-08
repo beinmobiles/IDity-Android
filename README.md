@@ -16,11 +16,34 @@ Please contact **[idity@beinmobiles.com](mailto:idity@beinmobiles.com)** to get 
 
 ## 📦 Installation
 
-### Swift Package Manager (SPM)
-1. In Xcode, go to **File > Add Packages...**
-2. Enter the following repository URL:
-   `https://github.com/beinmobiles/IDity-iOS.git`
-3. Set the dependency rule to the latest version or branch.
+### 1. Authenticate with GitHub Packages
+In your **settings.gradle.kts** (or **settings.gradle**), add the GitHub Packages Maven repository
+   
+   ```kotlin
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("https://maven.pkg.github.com/beinmobiles/IDitySDK-Android")
+            credentials {
+                // You must generate a GitHub Personal Access Token (Classic) with 'read:packages' scope
+                username = "YOUR_GITHUB_USERNAME"
+                password = "YOUR_GITHUB_TOKEN"
+            }
+        }
+    }
+}
+```
+
+### 2. Add the Dependency
+In your app-level **build.gradle.kts**, add the following line:
+
+```kotlin
+dependencies {
+     implementation("com.github.beinmobiles:idity:1.0.1") 
+ }
+```
 
 **Minimum Deployment Target:** Android 24
 
@@ -150,10 +173,6 @@ This object contains the metadata and imagery of the scanned identification docu
 | `documentImage` | `UIImage?` | High-quality image capture of the document front. |
 
 ---
-
-## 🛡️ Privacy & Security
-
-The IDity SDK is built with privacy in mind. Ensure that the PrivacyInfo.xcprivacy file included in the package is correctly bundled to comply with Apple's latest App Store requirements.
 
 ## 📧 Contact & Support
 
