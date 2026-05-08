@@ -22,7 +22,7 @@ Please contact **[idity@beinmobiles.com](mailto:idity@beinmobiles.com)** to get 
    `https://github.com/beinmobiles/IDity-iOS.git`
 3. Set the dependency rule to the latest version or branch.
 
-**Minimum Deployment Target:** iOS 15.6
+**Minimum Deployment Target:** Android 11
 
 ---
 
